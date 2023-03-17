@@ -1,25 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import MainContent from "./components/MainContent";
+// import Navbar from "./components/Navbar"
+// import Sidebar from "./components/Sidebar";
 
-function App() {
+// function App() {
+//   return (
+//     <div>
+//       <Navbar />
+//       <Header />
+
+//       <div class="row">
+//         <div className="col-md-3">
+//       <Sidebar />
+//       </div>
+//       <div className="col-md-9">
+//       <MainContent />
+//       </div>
+//       </div>
+//       <Footer />
+//     </div>
+//   )
+// }
+
+// export default App;
+
+import Footer from "./Profilepage/Footer";
+import Header from "./Profilepage/Header";
+import MainContent from "./Profilepage/MainContent";
+import Navbar from "./Profilepage/Navbar"
+import Sidebar from "./Profilepage/Sidebar";
+import Head from "./Profilepage/Head";
+import Try from "./Profilepage/try";
+import "./App.css"
+
+function Profilepicture() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+   
+      <Navbar />
+      <div class="row">
+      <div className="col-md-6">
+      <Header />
+     </div>
+      <div className="col-md-6"> 
+      <Head />
+        </div>
+        <div className="col-md-4">
+      <Sidebar />
+      </div>
+      <div className="col-md-4">
+      <MainContent />
+      </div>
+      <div className="col-md-4">
+      <Try />
+      </div>
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+
+export default Profilepicture;
